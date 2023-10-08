@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Teleporter : MonoBehaviour
 {
-    public Transform teleportDestination;
+    public int sceneBuildIndex;
 
-    private void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.CompareTag("Player")){
-            collision.gameObject.transform.position = teleportDestination.position;
+    private void OnTriggerEnter2D(Collider2D other){
+        Debug.Log("Enter trigger");
+
+        if(other.tag == ("Player")){
+            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
         }
     }
 }
