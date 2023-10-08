@@ -11,12 +11,4 @@ public class Teleporter : MonoBehaviour
             collision.gameObject.transform.position = teleportDestination.position;
         }
     }
-
-    void Start(){
-        
-    }
-
-    // Update is called once per frame
-    void Update(){
-    }
 }
