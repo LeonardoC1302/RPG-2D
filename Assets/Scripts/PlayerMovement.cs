@@ -53,7 +53,12 @@ public class PlayerMovement : MonoBehaviour
         direction = movement;
             
         if(movement.x != 0.0f || movement.y != 0.0f){
-            GameObject stick = Instantiate(stickP, transform.position + direction * 0.2f, Quaternion.identity);
+            GameObject stick = Instantiate(stickP, transform.position + direction * 0.25f, Quaternion.identity);
+            stick.GetComponent<Stick>().SetDirection(direction);
+            stickCount--;
+        }else{
+            direction = new Vector3(0f, -1f, 0f);
+            GameObject stick = Instantiate(stickP, transform.position + direction * 0.25f, Quaternion.identity);
             stick.GetComponent<Stick>().SetDirection(direction);
             stickCount--;
         }
