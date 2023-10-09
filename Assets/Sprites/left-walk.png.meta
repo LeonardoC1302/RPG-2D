@@ -108,9 +108,9 @@ TextureImporter:
       name: left-walk_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 5
         y: 3
-        width: 16
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ea971b004fb5d54885721d64406bafa
-      internalID: 69045349
+      spriteID: b0b20a8c3df99c343a1e5f08f4bb7cd9
+      internalID: -1174951540
       vertices: []
       indices: 
       edges: []
@@ -129,9 +129,9 @@ TextureImporter:
       name: left-walk_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 37
         y: 3
-        width: 16
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de31cfb99c969ed42961743df9d2f90f
-      internalID: 62560309
+      spriteID: 575853ade37afa24fba380547af54025
+      internalID: -519013973
       vertices: []
       indices: 
       edges: []
@@ -150,9 +150,9 @@ TextureImporter:
       name: left-walk_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 69
         y: 3
-        width: 16
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b39578055254ef442979239c2cf187af
-      internalID: -510091070
+      spriteID: 279c9ee777a550240b559b0760f00930
+      internalID: -517824493
       vertices: []
       indices: 
       edges: []
@@ -171,9 +171,9 @@ TextureImporter:
       name: left-walk_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 101
         y: 3
-        width: 16
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1809ed2768448a842879e16e9d207f07
-      internalID: 1816730352
+      spriteID: 2a405b04bfab1bc4cb8b2754d61ebd99
+      internalID: 1659554000
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      left-walk_1: 62560309
-      left-walk_3: 1816730352
-      left-walk_2: -510091070
-      left-walk_0: 69045349
+      left-walk_1: -519013973
+      left-walk_3: 1659554000
+      left-walk_2: -517824493
+      left-walk_0: -1174951540
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

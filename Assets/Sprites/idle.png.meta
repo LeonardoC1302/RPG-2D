@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51b448ae291cc914fb95da5a06b1606a
+guid: 749d7dddf1ac15b469d41fbdd204c123
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: down-walk_0
+      name: idle_0
       rect:
         serializedVersion: 2
         x: 7
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fadf685ed7403174aa4be31b69b6bc32
-      internalID: -129719894
+      spriteID: 47df469a429bb7e498e604b008c6ac6e
+      internalID: -273090123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: down-walk_1
+      name: idle_1
       rect:
         serializedVersion: 2
         x: 39
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a625f06861b3842b1ef6e12853a958
-      internalID: -1588428634
+      spriteID: 7f2b2d747b40b24498d2989dfa4f1d01
+      internalID: 1139474542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: down-walk_2
+      name: idle_2
       rect:
         serializedVersion: 2
         x: 71
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 851e035ac5568fd4dbc5fe39caee54cb
-      internalID: -2144653447
+      spriteID: 9251c17a5226a5948bccd8b66f41909a
+      internalID: 1371232606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: down-walk_3
+      name: idle_3
       rect:
         serializedVersion: 2
         x: 103
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdb2ab1f3b47adf489504a50f49a57ff
-      internalID: 1735291479
+      spriteID: 7aeb912a772b352408dbc40019ef48f1
+      internalID: 591229309
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      down-walk_1: -1588428634
-      down-walk_3: 1735291479
-      down-walk_2: -2144653447
-      down-walk_0: -129719894
+      idle_3: 591229309
+      idle_0: -273090123
+      idle_1: 1139474542
+      idle_2: 1371232606
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1296e88e8ce952479b9005104eacee6
-      internalID: 980603074
+      spriteID: bc05df279cff4004e925f13753fd994d
+      internalID: -340011611
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3681111387ed0f46aa825eace38f950
-      internalID: 11165746
+      spriteID: 4095328bbaf79954b80a0b6994fee5bf
+      internalID: 2028451953
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99018b2021bc6c64698ddc8fe1b32d97
-      internalID: 1371559623
+      spriteID: 2c24831d6ddf4a1429f70b869e847e02
+      internalID: -273570977
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6aa1f9912f96c0499de243af1abc020
-      internalID: 1279632703
+      spriteID: 29a5bdfe67d165649865fd959da4ba7f
+      internalID: -588870664
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      up-walk_1: 11165746
-      up-walk_0: 980603074
-      up-walk_3: 1279632703
-      up-walk_2: 1371559623
+      up-walk_1: 2028451953
+      up-walk_0: -340011611
+      up-walk_3: -588870664
+      up-walk_2: -273570977
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

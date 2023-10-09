@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51b448ae291cc914fb95da5a06b1606a
+guid: baba526970d78c9499106b79e29ed0dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,85 +105,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: down-walk_0
+      name: trees_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 4
-        width: 19
-        height: 23
+        x: 14
+        y: 64
+        width: 38
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -10, y: -8}
+        - {x: -10, y: -8}
+        - {x: -10, y: -30}
+        - {x: 8, y: -30}
+        - {x: 8, y: -8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: fadf685ed7403174aa4be31b69b6bc32
-      internalID: -129719894
+      spriteID: c1e3cc6194209064aab03607e8d76381
+      internalID: 1770390593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: down-walk_1
+      name: trees_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 4
-        width: 19
-        height: 23
+        x: 76
+        y: 64
+        width: 46
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -13, y: -8}
+        - {x: -13, y: -8}
+        - {x: -13, y: -8}
+        - {x: -13, y: -27}
+        - {x: 6, y: -27}
+        - {x: 6, y: -8}
+        - {x: 6, y: -8}
+        - {x: 6, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 87a625f06861b3842b1ef6e12853a958
-      internalID: -1588428634
+      spriteID: 056921c2cd19fbe4c884808ff4cde742
+      internalID: -1861831201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: down-walk_2
+      name: trees_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 4
-        width: 19
-        height: 23
+        x: 20
+        y: 0
+        width: 24
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -4, y: -15}
+        - {x: -4, y: -15}
+        - {x: -4, y: -15}
+        - {x: -4, y: -15}
+        - {x: -4, y: -22}
+        - {x: 6, y: -22}
+        - {x: 6, y: -15}
+        - {x: 6, y: -15}
+        - {x: -4, y: -15}
       tessellationDetail: 0
       bones: []
-      spriteID: 851e035ac5568fd4dbc5fe39caee54cb
-      internalID: -2144653447
+      spriteID: 09f64329fc083be49ba5b557e8ddfcec
+      internalID: 1552113324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: down-walk_3
+      name: trees_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 4
-        width: 19
-        height: 23
+        x: 82
+        y: 0
+        width: 26
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -9, y: -9}
+        - {x: -9, y: -22}
+        - {x: 9, y: -22}
+        - {x: 9, y: -9}
       tessellationDetail: 0
       bones: []
-      spriteID: fdb2ab1f3b47adf489504a50f49a57ff
-      internalID: 1735291479
+      spriteID: 8c77d56d0e80b1f4bb9331d5027e4450
+      internalID: 1023961815
       vertices: []
       indices: 
       edges: []
@@ -199,10 +226,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      down-walk_1: -1588428634
-      down-walk_3: 1735291479
-      down-walk_2: -2144653447
-      down-walk_0: -129719894
+      trees_0: 1770390593
+      trees_1: -1861831201
+      trees_2: 1552113324
+      trees_3: 1023961815
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
