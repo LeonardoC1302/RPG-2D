@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
+    public int health;
     public float speed = 1f;
     public float speedMultiplier = 1f;
     public GameObject stickP;
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude); // Speed is the magnitude of the vector
+        animator.SetFloat("Speed", movement.normalized.sqrMagnitude); // Speed is the magnitude of the vector
 
         if (Input.GetKey(KeyCode.Space) && stickCount > 0 && Time.time > lastStick + 0.25f){
             throwStick();
@@ -61,6 +62,13 @@ public class PlayerMovement : MonoBehaviour
             GameObject stick = Instantiate(stickP, transform.position + direction * 0.25f, Quaternion.identity);
             stick.GetComponent<Stick>().SetDirection(direction);
             stickCount--;
+        }
+    }
+
+    public void takeDamage(int damage) {
+        health -= damage;
+        if (health <= 0) {
+            Destroy(gameObject);
         }
     }
 }
