@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fbe19d48dd704f4d8987bac7637ea59
+guid: 749d7dddf1ac15b469d41fbdd204c123
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,17 +101,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_0
+      name: idle_0
       rect:
         serializedVersion: 2
         x: 7
-        y: 36
+        y: 4
         width: 19
-        height: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af89306f950ff55488e96eed9ebce9e7
-      internalID: -1978364718
+      spriteID: 47df469a429bb7e498e604b008c6ac6e
+      internalID: -273090123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_1
+      name: idle_1
       rect:
         serializedVersion: 2
         x: 39
-        y: 36
+        y: 4
         width: 19
-        height: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c43635d15f1bfa247b85f4eb986f4077
-      internalID: -850292173
+      spriteID: 7f2b2d747b40b24498d2989dfa4f1d01
+      internalID: 1139474542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_2
+      name: idle_2
       rect:
         serializedVersion: 2
-        x: 7
-        y: 3
-        width: 16
-        height: 24
+        x: 71
+        y: 4
+        width: 19
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60305ca60aa20f04b9ead865c6c2ca97
-      internalID: 398479301
+      spriteID: 9251c17a5226a5948bccd8b66f41909a
+      internalID: 1371232606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_3
+      name: idle_3
       rect:
         serializedVersion: 2
-        x: 41
-        y: 3
-        width: 16
-        height: 24
+        x: 103
+        y: 4
+        width: 19
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15e99054fe303744896b8746df85469
-      internalID: 1804207834
+      spriteID: 7aeb912a772b352408dbc40019ef48f1
+      internalID: 591229309
       vertices: []
       indices: 
       edges: []
@@ -199,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zombie_3: 1804207834
-      zombie_2: 398479301
-      zombie_1: -850292173
-      zombie_0: -1978364718
+      idle_3: 591229309
+      idle_0: -273090123
+      idle_1: 1139474542
+      idle_2: 1371232606
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

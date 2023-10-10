@@ -12,13 +12,15 @@ public class Stick : MonoBehaviour
         Rb = GetComponent<Rigidbody2D>();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision){
+        Rb.velocity = Vector2.zero;
+    }
+
     private void FixedUpdate(){
         Rb.velocity = Direction * Speed;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         
     }
 

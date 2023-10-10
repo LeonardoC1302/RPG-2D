@@ -20,7 +20,7 @@ public class PlayerScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Stick")){
             Destroy(collision.gameObject);
             stickCount++;
-            Debug.Log("Count: " + stickCount);
+            //Debug.Log("Count: " + stickCount);
         }
     }
     void Start()
@@ -29,7 +29,6 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();    
     }
 
-    // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");

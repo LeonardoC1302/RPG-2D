@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56af04773ee3d4046ad73fabe6214f10
+guid: 3213c0558784d5946a4bcadbc6c356bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,17 +101,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: left-walk_0
+      name: GemEnemy_Idle_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 7
         y: 3
-        width: 19
-        height: 24
+        width: 17
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0b20a8c3df99c343a1e5f08f4bb7cd9
-      internalID: -1174951540
+      spriteID: 597ce4826ca37d94484e76534f3a312f
+      internalID: -1877173161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left-walk_1
+      name: GemEnemy_Idle_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 39
         y: 3
-        width: 19
-        height: 24
+        width: 17
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575853ade37afa24fba380547af54025
-      internalID: -519013973
+      spriteID: da4797f7743c08a4f9e65e26e2d7948c
+      internalID: 187360443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left-walk_2
+      name: GemEnemy_Idle_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 71
         y: 3
-        width: 19
-        height: 24
+        width: 17
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 279c9ee777a550240b559b0760f00930
-      internalID: -517824493
+      spriteID: 665b776846feb664f94e0c5171a88e58
+      internalID: 1054737454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left-walk_3
+      name: GemEnemy_Idle_3
       rect:
         serializedVersion: 2
-        x: 101
+        x: 103
         y: 3
-        width: 19
-        height: 24
+        width: 17
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +194,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a405b04bfab1bc4cb8b2754d61ebd99
-      internalID: 1659554000
+      spriteID: 8421075669a867548b1184601d156a06
+      internalID: 1412141783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemEnemy_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd83067826f01774baa319e14e2d0d74
+      internalID: 29521838
       vertices: []
       indices: 
       edges: []
@@ -199,10 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      left-walk_1: -519013973
-      left-walk_3: 1659554000
-      left-walk_2: -517824493
-      left-walk_0: -1174951540
+      GemEnemy_Idle_1: 187360443
+      GemEnemy_Idle_3: 1412141783
+      GemEnemy_Idle_0: -1877173161
+      GemEnemy_Idle_2: 1054737454
+      GemEnemy_Idle_4: 29521838
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

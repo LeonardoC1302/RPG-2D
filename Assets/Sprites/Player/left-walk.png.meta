@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a902711d563f6d743b3b182821090740
+guid: 56af04773ee3d4046ad73fabe6214f10
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,14 +101,26 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: right-walk_0
+      name: left-walk_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 5
         y: 3
         width: 19
         height: 24
@@ -119,17 +131,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4729af7d036a442a2f3603fa618f8d
-      internalID: -951667712
+      spriteID: b0b20a8c3df99c343a1e5f08f4bb7cd9
+      internalID: -1174951540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: right-walk_1
+      name: left-walk_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 37
         y: 3
         width: 19
         height: 24
@@ -140,17 +152,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 761b6bcc44216c146a739238045e8db9
-      internalID: -830493423
+      spriteID: 575853ade37afa24fba380547af54025
+      internalID: -519013973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: right-walk_2
+      name: left-walk_2
       rect:
         serializedVersion: 2
-        x: 72
+        x: 69
         y: 3
         width: 19
         height: 24
@@ -161,17 +173,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72c59c9fea6fc6a4980bee727f545db4
-      internalID: -172528881
+      spriteID: 279c9ee777a550240b559b0760f00930
+      internalID: -517824493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: right-walk_3
+      name: left-walk_3
       rect:
         serializedVersion: 2
-        x: 104
+        x: 101
         y: 3
         width: 19
         height: 24
@@ -182,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a73ab90db976740aa7f073fcb74632
-      internalID: 188032068
+      spriteID: 2a405b04bfab1bc4cb8b2754d61ebd99
+      internalID: 1659554000
       vertices: []
       indices: 
       edges: []
@@ -199,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      right-walk_0: -951667712
-      right-walk_3: 188032068
-      right-walk_2: -172528881
-      right-walk_1: -830493423
+      left-walk_1: -519013973
+      left-walk_3: 1659554000
+      left-walk_2: -517824493
+      left-walk_0: -1174951540
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
