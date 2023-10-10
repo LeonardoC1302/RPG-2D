@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stick
   - Gem
+  - Obstacle
   layers:
   - Default
   - TransparentFX

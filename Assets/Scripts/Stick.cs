@@ -13,7 +13,7 @@ public class Stick : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision){
-        Rb.velocity = Vector2.zero;
+        Rb.velocity = Vector3.zero;
     }
 
     private void FixedUpdate(){
