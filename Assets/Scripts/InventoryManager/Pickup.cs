@@ -19,13 +19,13 @@ public class Pickup : MonoBehaviour
                 if(inventory.quantityPerSlot[i] == 0){
                     Instantiate(itemButton, inventory.slots[i].transform, false);
                     inventory.objects[i] = gameObject.tag;
-                    inventory.quantityPerSlot[i]++;
+                    inventory.increaseInventory(i);
                     Destroy(gameObject);
                     break;
                 }else if(inventory.quantityPerSlot[i] >= inventory.maxCapacity){
                     Debug.Log("Inventory Full At: " + i);
                 }else if(gameObject.tag == inventory.objects[i]){
-                    inventory.quantityPerSlot[i]++;
+                    inventory.increaseInventory(i);
                     Destroy(gameObject);
                     Debug.Log("Object: " + i + " -> " + inventory.quantityPerSlot[i]);
                     break;

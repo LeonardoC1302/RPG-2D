@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4988859791716275274}
   - component: {fileID: 5627133966083114714}
   - component: {fileID: 2712868152375231436}
+  - component: {fileID: 1097326846698330167}
   m_Layer: 5
   m_Name: Egg Button
   m_TagString: Untagged
@@ -121,3 +122,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1097326846698330167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404475063220492963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b1e73ffe9fcd546aa2c5c04ec41818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5973044936972885055, guid: c131ccffcebc80847b6241307dd9b3ad, type: 3}
+  player: {fileID: 0}
