@@ -40,7 +40,7 @@ public class PlayerScript : MonoBehaviour
         animator.SetFloat("Speed", movement.normalized.sqrMagnitude); // Speed is the magnitude of the vector
 
         if (Input.GetKey(KeyCode.Space) && Time.time > lastThrow + 0.25f && itemThrow != null){
-            throwStick(itemThrow);
+            //throwItem(itemThrow);
             lastThrow = Time.time;
         }
     
@@ -48,23 +48,6 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate(){
         rb.MovePosition(rb.position + movement * speed * speedMultiplier * Time.fixedDeltaTime);
-    }
-
- 
-    public void throwStick(GameObject item){
-        Vector3 direction;
-        direction = movement;
-            
-        if(movement.x != 0.0f || movement.y != 0.0f){
-            GameObject stick = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
-            stick.GetComponent<Stick>().SetDirection(direction);
-            inventory.quantityPerSlot[itemIndex]--;
-        }else{
-            direction = new Vector3(0f, -1f, 0f);
-            GameObject stick = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
-            stick.GetComponent<Stick>().SetDirection(direction);
-            inventory.quantityPerSlot[itemIndex]--;;
-        }
     }
 
     public void takeDamage(int damage) {

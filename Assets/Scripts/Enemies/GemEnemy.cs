@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GemEnemy : Enemy
 {
-    private Animator enemyAnimator;
+    public Animator enemyAnimator;
 
     void Start()
     {
