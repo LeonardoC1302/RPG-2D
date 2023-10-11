@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GemEnemy : MonoBehaviour
+public class GemEnemy : Enemy
 {
     private Animator enemyAnimator;
 

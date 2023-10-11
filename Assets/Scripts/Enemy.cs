@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float speedMultiplier;
 
+    public float timeBetweenAttacks;
+
     [HideInInspector]
     public Transform target;
     public virtual void Start(){

@@ -22,5 +22,6 @@ public class GemScript : MonoBehaviour
         if (health <= 0) {
             Destroy(gameObject);
         }
+        Debug.Log("Gem health: " + health);
     }
 }

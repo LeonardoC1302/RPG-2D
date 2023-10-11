@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class SummonerEnemy : Enemy
 {
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
     public float stopDistance;
     public float timeBetweenSummons;
     private float summonTime;
@@ -36,8 +32,8 @@ public class SummonerEnemy : Enemy
 
     public void Summon(){
         if(target != null){
-            spawnPosition.x = Random.Range(minX, maxX);
-            spawnPosition.y = Random.Range(minY, maxY);
+            spawnPosition.x = transform.position.x;
+            spawnPosition.y = transform.position.y;
             Enemy newEnemy = Instantiate(enemyToSummon, spawnPosition, transform.rotation);
         }
     }

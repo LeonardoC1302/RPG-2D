@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6294838472970990882}
   m_Layer: 9
   m_Name: Summoner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,10 +141,6 @@ MonoBehaviour:
   speed: 1
   speedMultiplier: 1
   target: {fileID: 0}
-  minX: -2
-  maxX: 2
-  minY: -1
-  maxY: 1
   stopDistance: 1.5
   timeBetweenSummons: 3
   enemyToSummon: {fileID: 6315790478564843718, guid: 04839ce3f3ff18f43824d0a7e0b8c8de, type: 3}

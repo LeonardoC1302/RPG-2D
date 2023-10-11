@@ -5,7 +5,6 @@ using UnityEngine;
 public class MeleeEnemy : Enemy
 {
     public float stopDistance;
-    public float timeBetweenAttacks;
     private float attackTime;
 
     void Update()
