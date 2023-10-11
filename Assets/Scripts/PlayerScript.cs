@@ -12,21 +12,12 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private Vector2 movement;
-    private int stickCount = 0;
 
 
-    private void OnCollisionEnter2D(Collision2D collision){
-        
-        if(collision.gameObject.CompareTag("Stick")){
-            Destroy(collision.gameObject);
-            stickCount++;
-            //Debug.Log("Count: " + stickCount);
-        }
-    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();  
     }
 
     void Update()
@@ -38,16 +29,19 @@ public class PlayerScript : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.normalized.sqrMagnitude); // Speed is the magnitude of the vector
 
+        /*
         if (Input.GetKey(KeyCode.Space) && stickCount > 0 && Time.time > lastStick + 0.25f){
             throwStick();
             lastStick = Time.time;
         }
+        */
     }
 
     private void FixedUpdate(){
         rb.MovePosition(rb.position + movement * speed * speedMultiplier * Time.fixedDeltaTime);
     }
 
+    /*
     private void throwStick(){
         Vector3 direction;
         direction = movement;
@@ -63,6 +57,7 @@ public class PlayerScript : MonoBehaviour
             stickCount--;
         }
     }
+    */
 
     public void takeDamage(int damage) {
         health -= damage;
