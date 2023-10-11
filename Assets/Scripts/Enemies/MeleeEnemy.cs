@@ -7,8 +7,9 @@ public class MeleeEnemy : Enemy
     public float stopDistance;
     private float attackTime;
 
-    void Update()
+    public override void Update()
     {
+        base.Update();
         if(target != null){
             if(target.position.x < transform.position.x){
                 transform.localScale = new Vector3(-1, 1, 1);

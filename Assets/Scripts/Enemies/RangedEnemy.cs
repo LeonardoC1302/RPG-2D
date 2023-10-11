@@ -9,8 +9,9 @@ public class RangedEnemy : Enemy
     public Transform shotPoint;
     public GameObject bullet;
 
-    void Update()
+    public override void Update()
     {
+        base.Update();
         if(target != null){
             if(Vector2.Distance(transform.position, target.position) > stopDistance){
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);

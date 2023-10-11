@@ -13,13 +13,23 @@ public class Enemy : MonoBehaviour
 
     [HideInInspector]
     public Transform target;
-    public virtual void Start(){
-        target = GameObject.FindGameObjectWithTag("Gem").transform;
+
+    public virtual void Update(){
+        target = getCloserTarget();
     }
     public void takeDamage(int damage) {
         health -= damage;
         if (health <= 0) {
             Destroy(gameObject);
         }
+    }
+
+    public Transform getCloserTarget(){
+        Defense[] defenses = FindObjectsOfType<Defense>();
+        foreach(Defense defense in defenses){
+            Debug.Log(defense);
+        }
+
+        return null;
     }
 }
