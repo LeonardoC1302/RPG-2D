@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public bool[] isFull;
     public GameObject[] slots;
+
+    public string[] objects;
     public int[] quantityPerSlot;
 
     public int maxCapacity;
