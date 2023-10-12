@@ -137,3 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5404475063220492963, guid: 4cc8ba8875e7eac4892e44508e20e72e, type: 3}
+  speed: 2

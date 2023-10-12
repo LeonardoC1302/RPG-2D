@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
         num.text = quantityPerSlot[index].ToString();
     }
 
-     public void DropItem(int index){
+     public void DropItems(int index){
         if(quantityPerSlot[index] > 0){
             quantityPerSlot[index]--;
             num = slots[index].transform.Find("Quantity").GetComponent<TextMeshProUGUI>();
@@ -31,6 +31,19 @@ public class Inventory : MonoBehaviour
                     if( quantityPerSlot[index] == 0 ){
                         GameObject.Destroy(child.gameObject);
                     }
+                }
+            }
+        }
+    }
+
+    public void ReduceItems(int index){
+        if(quantityPerSlot[index] > 0){
+            quantityPerSlot[index]--;
+            num = slots[index].transform.Find("Quantity").GetComponent<TextMeshProUGUI>();
+            num.text = quantityPerSlot[index].ToString();
+            foreach(Transform child in slots[index].transform){
+                if(child.gameObject.name != "Drop" && child.gameObject.name != "Quantity" && quantityPerSlot[index] == 0 ){
+                    GameObject.Destroy(child.gameObject);
                 }
             }
         }

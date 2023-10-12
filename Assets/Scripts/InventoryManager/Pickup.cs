@@ -7,10 +7,14 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     public GameObject itemButton;
+    public float speed;
     private Inventory inventory;
+    private Rigidbody2D Rb;
+    private Vector2 direction;
 
     void Start(){
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        Rb = GetComponent<Rigidbody2D>();
     }
 
     void OnTriggerEnter2D(Collider2D other){
@@ -23,16 +27,28 @@ public class Pickup : MonoBehaviour
                     Destroy(gameObject);
                     break;
                 }else if(inventory.quantityPerSlot[i] >= inventory.maxCapacity){
-                    Debug.Log("Inventory Full At: " + i);
+                    //Debug.Log("Inventory Full At: " + i);
                 }else if(gameObject.tag == inventory.objects[i]){
                     inventory.increaseInventory(i);
                     Destroy(gameObject);
-                    Debug.Log("Object: " + i + " -> " + inventory.quantityPerSlot[i]);
+                    //Debug.Log("Object: " + i + " -> " + inventory.quantityPerSlot[i]);
                     break;
                 }          
             }
         }
     }
     void Update(){
+    }
+
+    private void FixedUpdate(){
+        Rb.velocity = direction * speed;
+    }
+
+    public void setDirection(Vector2 Direction){
+        direction = Direction;
+    }
+
+    public void destroyItem(){
+        Destroy(gameObject); // Destroy the bullet
     }
 }

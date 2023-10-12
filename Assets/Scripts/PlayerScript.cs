@@ -16,6 +16,8 @@ public class PlayerScript : MonoBehaviour
     private Inventory inventory;
     private float lastThrow;
     private GameObject itemThrow;
+    private int itemThrowIndex;
+    private Inventory playerInv;
 
 
     void Start()
@@ -23,11 +25,16 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();  
         inventory = rb.GetComponent<Inventory>();
+        playerInv = gameObject.GetComponent<Inventory>();
     }
 
     public void setItemThrow(GameObject item){
         Debug.Log("Item Set");
         itemThrow = item;
+    }
+
+    public void setItemIndex(int i){
+        itemThrowIndex = i;
     }
 
     void Update()
@@ -40,10 +47,29 @@ public class PlayerScript : MonoBehaviour
         animator.SetFloat("Speed", movement.normalized.sqrMagnitude); // Speed is the magnitude of the vector
 
         if (Input.GetKey(KeyCode.Space) && Time.time > lastThrow + 0.25f && itemThrow != null){
-            //throwItem(itemThrow);
+            throwItem(itemThrow);
             lastThrow = Time.time;
         }
     
+    }
+
+    private void throwItem(GameObject item){
+        Vector3 direction;
+        direction = movement;
+
+        if(playerInv.quantityPerSlot[itemThrowIndex] == 0){
+            return;
+        }
+
+        if(movement.x != 0.0f || movement.y != 0.0f){
+            GameObject throwable = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
+            throwable.GetComponent<Pickup>().setDirection(direction);
+        }else{
+            direction = new Vector3(0f, -1f, 0f);
+            GameObject stick = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
+            stick.GetComponent<Pickup>().setDirection(direction);
+        }
+        playerInv.ReduceItems(itemThrowIndex);
     }
 
     private void FixedUpdate(){
