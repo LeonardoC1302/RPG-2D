@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     public int health;
     public float speed = 1f;
     public float speedMultiplier = 1f;
-    public int itemIndex = 0;
+    //public int index;
     private float lastStick;
     private Rigidbody2D rb;
     private Animator animator;
@@ -56,20 +56,17 @@ public class PlayerScript : MonoBehaviour
     private void throwItem(GameObject item){
         Vector3 direction;
         direction = movement;
-
-        if(playerInv.quantityPerSlot[itemThrowIndex] == 0){
-            return;
+        if(playerInv.quantityPerSlot[itemThrowIndex] > 0){
+            if(movement.x != 0.0f || movement.y != 0.0f){
+                GameObject throwable = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
+                throwable.GetComponent<Pickup>().setDirection(direction);
+            }else{
+                direction = new Vector3(0f, -1f, 0f);
+                GameObject throwable = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
+                throwable.GetComponent<Pickup>().setDirection(direction);
+            }
+            playerInv.ReduceItems(itemThrowIndex);
         }
-
-        if(movement.x != 0.0f || movement.y != 0.0f){
-            GameObject throwable = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
-            throwable.GetComponent<Pickup>().setDirection(direction);
-        }else{
-            direction = new Vector3(0f, -1f, 0f);
-            GameObject stick = Instantiate(item, transform.position + direction * 0.25f, Quaternion.identity);
-            stick.GetComponent<Pickup>().setDirection(direction);
-        }
-        playerInv.ReduceItems(itemThrowIndex);
     }
 
     private void FixedUpdate(){
