@@ -103,9 +103,9 @@ MonoBehaviour:
   damage: 1
   speed: 1
   speedMultiplier: 1
+  timeBetweenAttacks: 1
   target: {fileID: 0}
   stopDistance: 0.3
-  timeBetweenAttacks: 1
 --- !u!50 &2049152789911219575
 Rigidbody2D:
   serializedVersion: 4

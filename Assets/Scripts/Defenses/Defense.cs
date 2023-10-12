@@ -5,28 +5,40 @@ using UnityEngine.UIElements;
 
 public class Defense : MonoBehaviour
 {
+    public int maxHealth;
     public int health;
     public int damage;
     public float timeBetweenAttacks;
     public int cost;
     [HideInInspector]
     public Transform target;
+    private TileScript tile;
+    [SerializeField] private HealthBar healthBar;
+
+    private void Awake() {
+        healthBar = GetComponentInChildren<HealthBar>();
+        healthBar.SetTarget(transform);
+        maxHealth = health;
+    }
     public virtual void Update(){
         target = getCloserTarget();
-        if(target != null){
-            if(target.position.x < transform.position.x){
-                transform.localScale = new Vector3(-1, 1, 1);
-            }else if(target.position.x > transform.position.x){
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-        }
     }
 
     public void takeDamage(int damage) {
         health -= damage;
+        healthBar.UpdateHealth(health, maxHealth);
         if (health <= 0) {
-            Destroy(gameObject);
+            DestroyDefense();
         }
+    }
+
+    public void setTile(TileScript tile) {
+        this.tile = tile;
+    }
+
+    public void DestroyDefense() {
+        Destroy(gameObject);
+        if(tile != null) this.tile.isOccupied = false;
     }
 
     public Transform getCloserTarget(){

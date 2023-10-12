@@ -28,7 +28,9 @@ public class GameManager : MonoBehaviour
                 }
             }
             if(!nearestTile.isOccupied){
-                Instantiate(defenseToPlace, nearestTile.transform.position, Quaternion.identity);
+                Defense defensePlaced = Instantiate(defenseToPlace, nearestTile.transform.position, Quaternion.identity);
+                defensePlaced.setTile(nearestTile);
+
                 defenseToPlace = null;
                 nearestTile.isOccupied = true;
                 grid.SetActive(false);
