@@ -136,10 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a54eea64d0adfa4094088906ec06899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 3
   damage: 1
   speed: 1
   speedMultiplier: 1
+  timeBetweenAttacks: 2
   target: {fileID: 0}
   stopDistance: 0.3
-  timeBetweenAttacks: 2

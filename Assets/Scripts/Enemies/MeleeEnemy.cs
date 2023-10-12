@@ -11,11 +11,6 @@ public class MeleeEnemy : Enemy
     {
         base.Update();
         if(target != null){
-            if(target.position.x < transform.position.x){
-                transform.localScale = new Vector3(-1, 1, 1);
-            }else if(target.position.x > transform.position.x){
-                transform.localScale = new Vector3(1, 1, 1);
-            }
             if(Vector2.Distance(transform.position, target.position) > stopDistance){
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);
             }else {
@@ -28,6 +23,6 @@ public class MeleeEnemy : Enemy
     }
 
     public void Attack(){
-        target.GetComponent<GemScript>().takeDamage(damage);
+        target.GetComponent<Defense>().takeDamage(damage);
     }
 }

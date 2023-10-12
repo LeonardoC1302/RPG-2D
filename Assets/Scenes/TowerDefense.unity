@@ -1166,7 +1166,6 @@ MonoBehaviour:
   health: 0
   speed: 1
   speedMultiplier: 1
-  itemIndex: 0
 --- !u!70 &255332745
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15973,7 +15972,7 @@ MonoBehaviour:
         m_MethodName: buyDefense
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6931125528784002816, guid: 7839ec43e2fa27243a33419350ace078, type: 3}
+          m_ObjectArgument: {fileID: 1428963043, guid: 7839ec43e2fa27243a33419350ace078, type: 3}
           m_ObjectArgumentAssemblyTypeName: Defense, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
