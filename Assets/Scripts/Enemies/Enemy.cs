@@ -17,17 +17,17 @@ public class Enemy : MonoBehaviour
     public virtual void Update(){
         target = getCloserTarget();
         if(target != null){
-            if(target.position.x < transform.position.x){
-                transform.localScale = new Vector3(-1, 1, 1);
-            }else if(target.position.x > transform.position.x){
-                transform.localScale = new Vector3(1, 1, 1);
-            }
+            // if(target.position.x < transform.position.x){
+            //     transform.localScale = new Vector3(-1, 1, 1);
+            // }else if(target.position.x > transform.position.x){
+            //     transform.localScale = new Vector3(1, 1, 1);
+            // }
         }
     }
     public void takeDamage(int damage) {
         health -= damage;
         if (health <= 0) {
-            Destroy(gameObject);
+            Die();
         }
     }
 
@@ -45,5 +45,9 @@ public class Enemy : MonoBehaviour
         }
         if(closerDefense != null) return closerDefense.transform;
         return null;
+    }
+
+    public virtual void Die(){
+        Destroy(gameObject);
     }
 }
