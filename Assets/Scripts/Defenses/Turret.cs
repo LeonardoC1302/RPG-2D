@@ -12,7 +12,7 @@ public class Turret : Defense
         base.Update();
         Rotate();
         if(target != null){
-            if(Time.time >= attackTime){
+            if(Time.time >= attackTime && Vector2.Distance(transform.position, target.position)/0.32 < range){
                 Shoot();
                 attackTime = Time.time + timeBetweenAttacks;
             }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float range;
     public int health;
     public int damage;
     public float speed;
@@ -17,11 +18,11 @@ public class Enemy : MonoBehaviour
     public virtual void Update(){
         target = getCloserTarget();
         if(target != null){
-            // if(target.position.x < transform.position.x){
-            //     transform.localScale = new Vector3(-1, 1, 1);
-            // }else if(target.position.x > transform.position.x){
-            //     transform.localScale = new Vector3(1, 1, 1);
-            // }
+            if(target.position.x < transform.position.x){
+                transform.localScale = new Vector3(-1, 1, 1);
+            }else if(target.position.x > transform.position.x){
+                transform.localScale = new Vector3(1, 1, 1);
+            }
         }
     }
     public void takeDamage(int damage) {
@@ -49,5 +50,14 @@ public class Enemy : MonoBehaviour
 
     public virtual void Die(){
         Destroy(gameObject);
+    }
+
+    public bool isInRange(Transform target){
+        if(Vector2.Distance(transform.position, target.position)/0.32 < range) return true;
+        return false;
+    }
+
+    public void move(){
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);
     }
 }

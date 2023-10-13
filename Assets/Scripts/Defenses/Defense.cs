@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class Defense : MonoBehaviour
 {
+    public float range;
     public int maxHealth;
     public int health;
     public int damage;
@@ -56,5 +57,16 @@ public class Defense : MonoBehaviour
 
         if(closerEnemy != null) return closerEnemy.transform;
         return null;
+    }
+
+    private void OnMouseDown(){
+        if(this.GetComponent<GemScript>() != null) return; // If it's a gem, don't show info
+        Debug.Log("Defense clicked");
+        DefenseInfo.ShowInfo(this);
+    }
+
+    public bool isInRange(Transform target){
+        if(Vector2.Distance(transform.position, target.position)/0.32 < range) return true;
+        return false;
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DivisionEnemy : Enemy
 {
-    public float stopDistance;
     private float attackTime;
     private int maxHealth;
 
@@ -15,8 +14,8 @@ public class DivisionEnemy : Enemy
     {
         base.Update();
         if(target != null){
-            if(Vector2.Distance(transform.position, target.position) > stopDistance){
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);
+            if(!isInRange(target)){
+                move();
             }else {
                 if(Time.time >= attackTime){
                     Attack();
