@@ -123,8 +123,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001668185, y: -0.003336385}
-  m_Size: {x: 0.16797975, y: 0.21665445}
+  m_Offset: {x: 0.001668185, y: -0.01}
+  m_Size: {x: 0.16, y: 0.2}
   m_Direction: 0
 --- !u!114 &5194653269615720766
 MonoBehaviour:
@@ -141,7 +141,6 @@ MonoBehaviour:
   health: 0
   speed: 1
   speedMultiplier: 1
-  itemIndex: 1
 --- !u!95 &5194653269615720767
 Animator:
   serializedVersion: 4
@@ -185,4 +184,4 @@ MonoBehaviour:
   - 
   - 
   quantityPerSlot: 00000000000000000000000000000000
-  maxCapacity: 5
+  maxCapacity: 6
