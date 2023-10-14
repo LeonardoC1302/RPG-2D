@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class ContainerEnemy : Enemy
 {
-    public float stopDistance;
     public GameObject enemyPrefab;
     private int enemiesToSpawn;
     void Start()
     {
-        enemiesToSpawn = Random.Range(1, 5);
+        enemiesToSpawn = Random.Range(3, 6);
     }
     public override void Update()
     {
         target = GameObject.FindGameObjectWithTag("Gem").transform;
         if(target != null){
-            Debug.Log("Moving");
-            if(Vector2.Distance(transform.position, target.position) > stopDistance){
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);
+            if(!isInRange(target)){
+                move();
             }else {
                 Die();
             }

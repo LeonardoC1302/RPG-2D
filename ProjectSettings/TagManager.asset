@@ -8,6 +8,8 @@ TagManager:
   - Gem
   - Obstacle
   - Enemy
+  - Egg
+  - Range
   layers:
   - Default
   - TransparentFX

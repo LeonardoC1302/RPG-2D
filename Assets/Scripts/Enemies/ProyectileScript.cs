@@ -28,14 +28,6 @@ public class ProyectileScript : MonoBehaviour
         this.bulletType = bulletType;
     }
 
-    // private void Update(){
-    //     if(Vector2.Distance(transform.position, targetPosition) > .1f){
-    //         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-    //     }else {
-    //         Destroy(gameObject);
-    //     }
-    // }
-
     private void FixedUpdate()
     {
         rb.velocity = direction * speed; // Move the bullet

@@ -23,7 +23,4 @@ public class GemEnemy : Enemy
         enemyAnimator.SetBool("Touch", false);;
     }
 
-    // // Update is called once per frame
-    // void Update(){
-    // }
 }

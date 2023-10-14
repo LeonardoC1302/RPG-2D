@@ -136,11 +136,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65db231e0c4d7d4cb32fe8f9f43beb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  range: 3
   health: 5
   damage: 1
   speed: 1
   speedMultiplier: 1
+  timeBetweenAttacks: 0
   target: {fileID: 0}
-  stopDistance: 1.5
   timeBetweenSummons: 3
   enemyToSummon: {fileID: 6315790478564843718, guid: 04839ce3f3ff18f43824d0a7e0b8c8de, type: 3}

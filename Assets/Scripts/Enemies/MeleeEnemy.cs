@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class MeleeEnemy : Enemy
 {
-    public float stopDistance;
     private float attackTime;
 
     public override void Update()
     {
         base.Update();
         if(target != null){
-            if(Vector2.Distance(transform.position, target.position) > stopDistance){
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);
+            if(!isInRange(target)){
+                move();
             }else {
                 if(Time.time >= attackTime){
                     Attack();

@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
 public class SummonerEnemy : Enemy
 {
-    public float stopDistance;
     public float timeBetweenSummons;
     private float summonTime;
     public Enemy enemyToSummon;
@@ -13,9 +13,9 @@ public class SummonerEnemy : Enemy
     {
         base.Update();
         if(target != null){
-            if(Vector2.Distance(transform.position, target.position) > stopDistance){
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * speedMultiplier * Time.deltaTime);
-            } else{ //spawn minions
+            if(!isInRange(target)){
+                move();
+            } else{
                 if(Time.time >= summonTime){
                     Summon();
                     summonTime = Time.time + timeBetweenSummons;

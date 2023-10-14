@@ -136,11 +136,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a9d3430dbd54544a8502a8daed7d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  range: 1
+  health: 15
   damage: 0
   speed: 0.5
   speedMultiplier: 1
   timeBetweenAttacks: 0
   target: {fileID: 0}
-  stopDistance: 0.3
   enemyPrefab: {fileID: 2049152789911219569, guid: ccdae44e7a2b7604bab2a35069d0801e, type: 3}
