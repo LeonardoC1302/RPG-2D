@@ -6,11 +6,17 @@ public class DropItem : MonoBehaviour
 {
     public GameObject item;
     private Transform player;
-    private int index = 0;
+    private int index;
+    private PlayerScript character;
+    private Inventory inventory;
+    private GameObject slot;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        character = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        inventory = character.GetComponent<Inventory>();
+        slot = transform.parent.gameObject;
     }
 
     public void Drop(){
@@ -18,17 +24,14 @@ public class DropItem : MonoBehaviour
         Instantiate(item, playerPos, Quaternion.identity);
     }
 
-    public void setItem(GameObject item){
-        PlayerScript character = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
-        Inventory inventory = character.GetComponent<Inventory>();
-        GameObject slot = transform.parent.gameObject;
+    public void setItem(GameObject items){
         for(int i = 0; i<inventory.slots.Length; i++){
             if(inventory.slots[i].Equals(slot)){
                 index = i;
             }
         }
-        Debug.Log(index);
-        character.setItemThrow(item);
+        //Debug.Log(index);
+        character.setItemThrow(items);
         character.setItemIndex(index);
     }
 

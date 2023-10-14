@@ -8,7 +8,6 @@ public class PlayerScript : MonoBehaviour
     public int health;
     public float speed = 1f;
     public float speedMultiplier = 1f;
-    //public int index;
     private float lastStick;
     private Rigidbody2D rb;
     private Animator animator;
