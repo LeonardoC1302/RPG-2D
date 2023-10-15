@@ -16,7 +16,7 @@ public class MeleeEnemy : Enemy
             }else {
                 animator.SetBool("isMoving", false);
                 if(Time.time >= attackTime){
-                    animator.SetTrigger("attack");
+                    animator.SetBool("isAttacking", true);
                     attackTime = Time.time + timeBetweenAttacks;
                 }
             }
@@ -25,5 +25,6 @@ public class MeleeEnemy : Enemy
 
     public void Attack(){
         target.GetComponent<Defense>().takeDamage(damage);
+        animator.SetBool("isAttacking", false);
     }
 }
