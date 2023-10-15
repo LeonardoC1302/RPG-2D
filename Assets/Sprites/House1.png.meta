@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,13 +115,69 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: House1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -35, y: -32}
+        - {x: -35, y: -30}
+        - {x: 33, y: -30}
+        - {x: 33, y: -32}
+        - {x: 9, y: -32}
+        - {x: -4, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc1583f7c6ba1149b7b4978403c6ce3
+      internalID: 86398788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -35, y: 32}
+        - {x: -35, y: 9}
+        - {x: -35, y: -16}
+        - {x: -11, y: -16}
+        - {x: 33, y: -16}
+        - {x: 33, y: -7}
+        - {x: 33, y: 10}
+        - {x: 34, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497feefb6f442224db608afa132d7600
+      internalID: 208646330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape:
-    - - {x: -35, y: -48}
+    - - {x: -34, y: -45}
       - {x: -35, y: -9}
       - {x: 34, y: -9}
-      - {x: 34, y: -48}
+      - {x: 34, y: -45}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 1537655665
@@ -130,7 +186,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      House1_1: 208646330
+      House1_0: 86398788
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
