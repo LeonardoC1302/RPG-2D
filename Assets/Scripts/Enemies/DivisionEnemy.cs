@@ -55,9 +55,9 @@ public class DivisionEnemy : Enemy
 
         // The enemies will spawn on each side of the original enemy, considering the direction of the target
 
-        Vector2 spawnPosition = new Vector2(transform.position.x, transform.position.y);
+        Vector2 spawnPosition = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y);
         GameObject clone1 = Instantiate(gameObject, spawnPosition, transform.rotation);
-        spawnPosition = new Vector2(transform.position.x, transform.position.y);
+        spawnPosition = new Vector2(transform.position.x - direction.x, transform.position.y - direction.y);
         GameObject clone2 = Instantiate(gameObject, spawnPosition, transform.rotation);
         clone1.GetComponent<DivisionEnemy>().setHealth(maxHealth/2);
         clone1.GetComponent<DivisionEnemy>().setDivisions(divisions+1);
