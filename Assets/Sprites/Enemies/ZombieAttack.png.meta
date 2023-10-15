@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fbe19d48dd704f4d8987bac7637ea59
+guid: 3616c5d035e26c04ebc20c6980a02aa8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,29 +101,59 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_0
+      name: ZombieAttack_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 36
+        x: 5
+        y: 0
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f8484ea348a5e4fab2632eb477e410
+      internalID: 781003770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieAttack_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a15f4aa090d6b64c98d3814c8b72918
+      internalID: -557200607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieAttack_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
         width: 19
-        height: 24
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af89306f950ff55488e96eed9ebce9e7
-      internalID: -1978364718
+      spriteID: 9af2bffe47587ef4ab2c1186a33b3113
+      internalID: -1488556463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_1
+      name: ZombieAttack_3
       rect:
         serializedVersion: 2
-        x: 39
-        y: 36
-        width: 19
-        height: 24
+        x: 149
+        y: 0
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c43635d15f1bfa247b85f4eb986f4077
-      internalID: -850292173
+      spriteID: b3b07d43f509aee4789c6e99c6283f15
+      internalID: -1188045801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_2
+      name: ZombieAttack_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 3
-        width: 16
-        height: 24
+        x: 197
+        y: 0
+        width: 22
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60305ca60aa20f04b9ead865c6c2ca97
-      internalID: 398479301
+      spriteID: 857de6ad39cd87f42b5df5cb7d1f0e96
+      internalID: 630118766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_3
+      name: ZombieAttack_5
       rect:
         serializedVersion: 2
-        x: 41
-        y: 3
-        width: 16
-        height: 24
+        x: 245
+        y: 0
+        width: 24
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15e99054fe303744896b8746df85469
-      internalID: 1804207834
+      spriteID: 3a5c0beb639a16245a604c267fc7c17e
+      internalID: -967924529
       vertices: []
       indices: 
       edges: []
@@ -211,10 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zombie_3: 1804207834
-      zombie_2: 398479301
-      zombie_1: -850292173
-      zombie_0: -1978364718
+      ZombieAttack_2: -1488556463
+      ZombieAttack_5: -967924529
+      ZombieAttack_3: -1188045801
+      ZombieAttack_1: -557200607
+      ZombieAttack_0: 781003770
+      ZombieAttack_4: 630118766
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -19,7 +19,7 @@ public class Defense : MonoBehaviour
     private void Awake() {
         healthBar = GetComponentInChildren<HealthBar>();
         healthBar.SetTarget(transform);
-        maxHealth = health;
+        // maxHealth = health;
     }
     public virtual void Update(){
         target = getCloserTarget();
@@ -61,7 +61,6 @@ public class Defense : MonoBehaviour
 
     private void OnMouseDown(){
         if(this.GetComponent<GemScript>() != null) return; // If it's a gem, don't show info
-        Debug.Log("Defense clicked");
         DefenseInfo.ShowInfo(this);
     }
 

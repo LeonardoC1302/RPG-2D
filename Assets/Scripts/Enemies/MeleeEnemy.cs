@@ -11,10 +11,12 @@ public class MeleeEnemy : Enemy
         base.Update();
         if(target != null){
             if(!isInRange(target)){
+                animator.SetBool("isMoving", true);
                 move();
             }else {
+                animator.SetBool("isMoving", false);
                 if(Time.time >= attackTime){
-                    Attack();
+                    animator.SetTrigger("attack");
                     attackTime = Time.time + timeBetweenAttacks;
                 }
             }

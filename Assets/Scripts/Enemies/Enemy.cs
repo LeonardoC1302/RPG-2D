@@ -14,6 +14,11 @@ public class Enemy : MonoBehaviour
 
     [HideInInspector]
     public Transform target;
+    public Animator animator;
+
+    public void Start(){
+        animator = GetComponent<Animator>();
+    }
 
     public virtual void Update(){
         target = getCloserTarget();
