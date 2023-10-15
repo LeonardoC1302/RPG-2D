@@ -14,26 +14,29 @@ public class Enemy : MonoBehaviour
 
     [HideInInspector]
     public Transform target;
+    [HideInInspector]
     public Animator animator;
+    private Vector3 scale;
 
-    public void Start(){
+    public virtual void Start(){
         animator = GetComponent<Animator>();
+        scale = transform.localScale;
     }
 
     public virtual void Update(){
         target = getCloserTarget();
         if(target != null){
             if(target.position.x < transform.position.x){
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(scale.x*-1, scale.y, scale.z);
             }else if(target.position.x > transform.position.x){
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(scale.x, scale.y, scale.z);
             }
         }
     }
     public void takeDamage(int damage) {
         health -= damage;
         if (health <= 0) {
-            Die();
+            animator.SetTrigger("Die");
         }
     }
 

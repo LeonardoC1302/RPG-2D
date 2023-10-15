@@ -27,6 +27,8 @@ public class Turret : Defense
         GameObject proyectile = Instantiate(bullet, transform.position+(Vector3)direction*0.2f, rotation);
         proyectile.GetComponent<ProyectileScript>().setDirection(direction);
         proyectile.GetComponent<ProyectileScript>().setDamage(damage);
+        proyectile.GetComponent<ProyectileScript>().setRange(range);
+        proyectile.GetComponent<ProyectileScript>().setSource(transform);
         proyectile.GetComponent<ProyectileScript>().setBulletType(1);
     }
 

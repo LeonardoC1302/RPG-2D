@@ -8,7 +8,9 @@ public class ProyectileScript : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 direction;
     public int damage;
+    public float range;
     private int bulletType; // 0 = enemy, 1 = defense
+    public Transform source;
 
 
     void Start()
@@ -24,8 +26,23 @@ public class ProyectileScript : MonoBehaviour
         this.damage = damage;
     }
 
+    public void setRange(float range){
+        this.range = range;
+    }
+
+    public void setSource(Transform source){
+        this.source = source;
+    }
+
     public void setBulletType(int bulletType){
         this.bulletType = bulletType;
+    }
+
+    private void Update(){
+        // Check if the bullet distance from the spawn point is greater than the range
+        if(Vector2.Distance(transform.position, source.position)/0.32 > range){
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()

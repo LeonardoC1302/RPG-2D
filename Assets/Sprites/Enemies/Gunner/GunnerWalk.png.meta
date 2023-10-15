@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59a6a758f62af79448500cbb2b00d0b3
+guid: 6d0b710cc775a8144ba53ad069c75fcb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ZombieDeath_0
+      name: GunnerWalk_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 7
         y: 0
-        width: 27
-        height: 39
+        width: 18
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca17b895ee67f7c4595e984db4389c2f
-      internalID: 2120674936
+      spriteID: f384a2f85480b7641a1cec6519dc53e9
+      internalID: 1693443394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_1
+      name: GunnerWalk_1
       rect:
         serializedVersion: 2
         x: 53
         y: 0
-        width: 29
-        height: 39
+        width: 18
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b2c50d53152904b9c1ca6728f252dd
-      internalID: -1057014546
+      spriteID: 54846c7bd4e31bc4992cbf58337c21b8
+      internalID: 8646706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_2
+      name: GunnerWalk_2
       rect:
         serializedVersion: 2
-        x: 101
+        x: 98
         y: 0
-        width: 32
-        height: 39
+        width: 24
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c21ee8af0efd4144a0aaad4917e4dfe
-      internalID: -1372527161
+      spriteID: c66539149f4b4494a87dfb90d623cd2c
+      internalID: 257037474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_3
+      name: GunnerWalk_3
       rect:
         serializedVersion: 2
-        x: 149
+        x: 145
         y: 0
-        width: 36
-        height: 39
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d2c44834f09e314597e78090fa06fb2
-      internalID: 1705094420
+      spriteID: 1197b831812591940ac0a64e40d9ef4c
+      internalID: -542962519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_4
+      name: GunnerWalk_4
       rect:
         serializedVersion: 2
-        x: 197
+        x: 195
         y: 0
-        width: 36
-        height: 39
+        width: 23
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f409fd8b698d1d64996b753bcb36acde
-      internalID: -1672610860
+      spriteID: 61367813f75a8e04dad25bcab601dfb1
+      internalID: 965618859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_5
+      name: GunnerWalk_5
       rect:
         serializedVersion: 2
         x: 245
         y: 0
-        width: 36
-        height: 39
+        width: 19
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5242708bdeb7a47438af0b3b1a1620a8
-      internalID: 299949618
+      spriteID: 241693230e786f64ca0d861e1e0141d9
+      internalID: 991456423
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ZombieDeath_0: 2120674936
-      ZombieDeath_1: -1057014546
-      ZombieDeath_2: -1372527161
-      ZombieDeath_3: 1705094420
-      ZombieDeath_5: 299949618
-      ZombieDeath_4: -1672610860
+      GunnerWalk_1: 8646706
+      GunnerWalk_0: 1693443394
+      GunnerWalk_5: 991456423
+      GunnerWalk_3: -542962519
+      GunnerWalk_2: 257037474
+      GunnerWalk_4: 965618859
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

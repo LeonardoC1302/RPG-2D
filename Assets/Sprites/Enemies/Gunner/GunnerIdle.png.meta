@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59a6a758f62af79448500cbb2b00d0b3
+guid: 3ecf0fbc914e0a34386a77830ba1376e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ZombieDeath_0
+      name: GunnerIdle_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 3
         y: 0
-        width: 27
-        height: 39
+        width: 21
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca17b895ee67f7c4595e984db4389c2f
-      internalID: 2120674936
+      spriteID: 82113168319594e4c9fa6e453ac8b5a7
+      internalID: -1440108732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_1
+      name: GunnerIdle_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 51
         y: 0
-        width: 29
-        height: 39
+        width: 21
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b2c50d53152904b9c1ca6728f252dd
-      internalID: -1057014546
+      spriteID: cec3eb08e7545a946a414875076d1708
+      internalID: 2014346364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_2
+      name: GunnerIdle_2
       rect:
         serializedVersion: 2
-        x: 101
+        x: 98
         y: 0
-        width: 32
-        height: 39
+        width: 22
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c21ee8af0efd4144a0aaad4917e4dfe
-      internalID: -1372527161
+      spriteID: b858fffb06420dc4b839a49527d49b00
+      internalID: 732990074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_3
+      name: GunnerIdle_3
       rect:
         serializedVersion: 2
-        x: 149
+        x: 146
         y: 0
-        width: 36
-        height: 39
+        width: 21
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,50 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d2c44834f09e314597e78090fa06fb2
-      internalID: 1705094420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ZombieDeath_4
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 0
-        width: 36
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f409fd8b698d1d64996b753bcb36acde
-      internalID: -1672610860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ZombieDeath_5
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 0
-        width: 36
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5242708bdeb7a47438af0b3b1a1620a8
-      internalID: 299949618
+      spriteID: bb32a2fda03045e4091c70b5f519f416
+      internalID: -969190350
       vertices: []
       indices: 
       edges: []
@@ -241,12 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ZombieDeath_0: 2120674936
-      ZombieDeath_1: -1057014546
-      ZombieDeath_2: -1372527161
-      ZombieDeath_3: 1705094420
-      ZombieDeath_5: 299949618
-      ZombieDeath_4: -1672610860
+      GunnerIdle_0: -1440108732
+      GunnerIdle_3: -969190350
+      GunnerIdle_2: 732990074
+      GunnerIdle_1: 2014346364
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

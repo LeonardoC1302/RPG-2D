@@ -19,7 +19,7 @@ public class Defense : MonoBehaviour
     private void Awake() {
         healthBar = GetComponentInChildren<HealthBar>();
         healthBar.SetTarget(transform);
-        // maxHealth = health;
+        maxHealth = health;
     }
     public virtual void Update(){
         target = getCloserTarget();

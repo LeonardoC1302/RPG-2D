@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59a6a758f62af79448500cbb2b00d0b3
+guid: 9ca07ea48a41d184baecc153b37d8caa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ZombieDeath_0
+      name: GunnerAttack_0
       rect:
         serializedVersion: 2
         x: 5
         y: 0
-        width: 27
-        height: 39
+        width: 28
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca17b895ee67f7c4595e984db4389c2f
-      internalID: 2120674936
+      spriteID: 2d21458ea6e82bc4f96801525bfbf3dd
+      internalID: 395713766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_1
+      name: GunnerAttack_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 52
         y: 0
         width: 29
-        height: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b2c50d53152904b9c1ca6728f252dd
-      internalID: -1057014546
+      spriteID: e3325cb47a1cad8498d2738cf7e1d0f2
+      internalID: -1968605749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_2
+      name: GunnerAttack_2
       rect:
         serializedVersion: 2
         x: 101
         y: 0
-        width: 32
-        height: 39
+        width: 29
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c21ee8af0efd4144a0aaad4917e4dfe
-      internalID: -1372527161
+      spriteID: e3599710ea0851a4ca8404794ee147ee
+      internalID: 1308629648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_3
+      name: GunnerAttack_3
       rect:
         serializedVersion: 2
-        x: 149
+        x: 151
         y: 0
-        width: 36
-        height: 39
+        width: 23
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d2c44834f09e314597e78090fa06fb2
-      internalID: 1705094420
+      spriteID: c2b22df24b27e464c8da0c03186d55e2
+      internalID: 1239331733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_4
+      name: GunnerAttack_4
       rect:
         serializedVersion: 2
-        x: 197
+        x: 198
         y: 0
-        width: 36
-        height: 39
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f409fd8b698d1d64996b753bcb36acde
-      internalID: -1672610860
+      spriteID: 7acb334c656893a49834a1db4264b584
+      internalID: -625724700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieDeath_5
+      name: GunnerAttack_5
       rect:
         serializedVersion: 2
-        x: 245
+        x: 247
         y: 0
-        width: 36
-        height: 39
+        width: 26
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +224,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5242708bdeb7a47438af0b3b1a1620a8
-      internalID: 299949618
+      spriteID: 206636d9767764644a2a88d832517055
+      internalID: -1447337990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GunnerAttack_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65134407dce408e40b5ee5a73a7a8217
+      internalID: 431040440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GunnerAttack_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aed7db6e1d31b049b61ad79f9e167b3
+      internalID: -1938074336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GunnerAttack_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d27726c8d700a43870476093899c85
+      internalID: 1745602111
       vertices: []
       indices: 
       edges: []
@@ -241,12 +304,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ZombieDeath_0: 2120674936
-      ZombieDeath_1: -1057014546
-      ZombieDeath_2: -1372527161
-      ZombieDeath_3: 1705094420
-      ZombieDeath_5: 299949618
-      ZombieDeath_4: -1672610860
+      GunnerAttack_7: -1938074336
+      GunnerAttack_6: 431040440
+      GunnerAttack_4: -625724700
+      GunnerAttack_5: -1447337990
+      GunnerAttack_0: 395713766
+      GunnerAttack_1: -1968605749
+      GunnerAttack_2: 1308629648
+      GunnerAttack_8: 1745602111
+      GunnerAttack_3: 1239331733
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
