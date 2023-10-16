@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1277925012}
   m_Layer: 9
   m_Name: Golem
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1
   target: {fileID: 0}
   animator: {fileID: 0}
+  isFlying: 0
   divisions: 0
 --- !u!70 &1277925013
 CapsuleCollider2D:

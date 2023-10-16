@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public Animator animator;
     private Vector3 scale;
+    public bool isFlying = false;
 
     public virtual void Start(){
         animator = GetComponent<Animator>();
@@ -33,7 +34,7 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-    public void takeDamage(int damage) {
+    public virtual void takeDamage(int damage) {
         health -= damage;
         if (health <= 0) {
             animator.SetTrigger("Die");

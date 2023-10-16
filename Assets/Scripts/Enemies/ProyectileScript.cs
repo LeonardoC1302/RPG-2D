@@ -40,6 +40,10 @@ public class ProyectileScript : MonoBehaviour
 
     private void Update(){
         // Check if the bullet distance from the spawn point is greater than the range
+        if(source == null){
+            Destroy(gameObject);
+            return;
+        }
         if(Vector2.Distance(transform.position, source.position)/0.32 > range){
             Destroy(gameObject);
         }
