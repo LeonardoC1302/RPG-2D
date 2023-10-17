@@ -14,6 +14,7 @@ public class KamikazeEnemy : Enemy
             move();
         }else{
             if(!isExploding){
+                speed=0;
                 Explode();
             }
         }

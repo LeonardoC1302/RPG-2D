@@ -29046,7 +29046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1271849643
 Transform:
   m_ObjectHideFlags: 0
@@ -29105,7 +29105,7 @@ MonoBehaviour:
   - {fileID: 1920412082}
   - {fileID: 1228324357}
   - {fileID: 1350318633}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 5
 --- !u!1 &1277148665
 GameObject:
   m_ObjectHideFlags: 0
