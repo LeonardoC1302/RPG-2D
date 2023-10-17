@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: adddad20d26f42d4e8235956ae727172
+guid: 4b6b786d6332e9a4992c6a3035ff1365
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BatFly_0
+      name: GruntAttacki_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 13
-        width: 12
-        height: 10
+        x: 14
+        y: 0
+        width: 15
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 613de4e956bebbc4d955e111558a6d7a
-      internalID: -2023160337
+      spriteID: 316469308415556499980770ac0f48fc
+      internalID: -1150360600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BatFly_1
+      name: GruntAttacki_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 13
-        width: 13
-        height: 10
+        x: 76
+        y: 0
+        width: 17
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20379e146bcbef4419c0dacea7eafb67
-      internalID: -1926379597
+      spriteID: 4f0de91935c0f0a4d9656da7d1505be6
+      internalID: -165922365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BatFly_2
+      name: GruntAttacki_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 12
-        width: 10
-        height: 10
+        x: 137
+        y: 0
+        width: 20
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31728617de11b56428b1563cf3446caa
-      internalID: -244985809
+      spriteID: f60ae158aeb70084bb31be3dc9328005
+      internalID: 1953124650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BatFly_3
+      name: GruntAttacki_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 14
-        width: 13
-        height: 10
+        x: 198
+        y: 0
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +182,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b722897d30bb041a8d885249bc191c
-      internalID: 880097044
+      spriteID: d5826d51730bfe94087e74040d7d7305
+      internalID: -912666002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GruntAttacki_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20e4840f37e405429adbcf687b5bec4
+      internalID: -1267802473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GruntAttacki_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67be4f1747dd4354dbbb628061fd24df
+      internalID: -2084723163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GruntAttacki_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c06e7022d2e08244b0d8a5ded94caae
+      internalID: 1155191461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GruntAttacki_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbf8961169250142adefb21549f0d5c
+      internalID: 741459618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GruntAttacki_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c89d9936877ea94c84011abeb0e4e64
+      internalID: -448249808
       vertices: []
       indices: 
       edges: []
@@ -199,10 +304,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BatFly_1: -1926379597
-      BatFly_3: 880097044
-      BatFly_2: -244985809
-      BatFly_0: -2023160337
+      GruntAttacki_2: 1953124650
+      GruntAttacki_5: -2084723163
+      GruntAttacki_3: -912666002
+      GruntAttacki_8: -448249808
+      GruntAttacki_4: -1267802473
+      GruntAttacki_0: -1150360600
+      GruntAttacki_6: 1155191461
+      GruntAttacki_1: -165922365
+      GruntAttacki_7: 741459618
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

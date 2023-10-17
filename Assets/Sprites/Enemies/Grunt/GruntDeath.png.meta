@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 808bd8a5412252346be43aea122ca813
+guid: 1c98da89b83f7664ba9f083e862850d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BatAttack_0
+      name: GruntDeath_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 13
-        width: 12
-        height: 11
+        x: 13
+        y: 0
+        width: 19
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,113 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 100d0bca796217849b124e4bc1e21616
-      internalID: -309053325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BatAttack_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 14
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ff1e5386b846fd45a37ca24a11fd2a3
-      internalID: 802792437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BatAttack_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 15
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b2f5dd820d038f488854714a424de73
-      internalID: 132226003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BatAttack_3
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 12
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 818be79ee8e99974c967a4671fc62bf2
-      internalID: -400651573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BatAttack_4
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 10
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06c1c1bf18da7114786b4e915d048be7
-      internalID: -1175748809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BatAttack_5
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 13
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f420689bdd8f1d849ae398afb8f426bd
-      internalID: 706645160
+      spriteID: 84cd47c4b2e25cd48b601ffddab23e64
+      internalID: -585039042
       vertices: []
       indices: 
       edges: []
@@ -241,12 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BatAttack_5: 706645160
-      BatAttack_4: -1175748809
-      BatAttack_2: 132226003
-      BatAttack_3: -400651573
-      BatAttack_1: 802792437
-      BatAttack_0: -309053325
+      GruntDeath_0: -585039042
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
