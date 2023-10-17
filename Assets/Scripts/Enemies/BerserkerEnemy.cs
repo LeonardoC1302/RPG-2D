@@ -9,6 +9,7 @@ public class BerserkerEnemy : Enemy
     private bool rage;
     private bool isTransforming;
     private int maxHealth;
+    private float healthMultiplier = 1;
 
     public override void Start(){
         base.Start();
@@ -26,12 +27,9 @@ public class BerserkerEnemy : Enemy
                 move();
             } else{
                 animator.SetBool("isMoving", false);
-                if(rage){ // Only attacks if is in rage
-                    // Debug.Log("Atack");
-                    if(Time.time >= attackTime){
-                        animator.SetBool("isAttacking", true);
-                        attackTime = Time.time + timeBetweenAttacks;
-                    }
+                if(Time.time >= attackTime){
+                    animator.SetBool("isAttacking", true);
+                    attackTime = Time.time + timeBetweenAttacks;
                 }
             }
         }
@@ -49,7 +47,11 @@ public class BerserkerEnemy : Enemy
         rage = true;
         animator.SetBool("isTransforming", false);
         isTransforming = false;
+        
         speed = speed * 2;
+        health = (int)Mathf.Floor( (maxHealth/2) * healthMultiplier );
+        range = 1f;
+        timeBetweenAttacks = 1.5f;
     }
 
     public void Attack(){
@@ -58,6 +60,12 @@ public class BerserkerEnemy : Enemy
         if(rage){
             health += damage/6;
         }
+    }
+
+    public void drinkCoffee(){
+        damage += 1;
+        healthMultiplier += 0.05f;
+        animator.SetBool("isAttacking", false);
     }
 
     public void endAttack(){
