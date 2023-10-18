@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeEnemy : Enemy
+public class FlyingEnemy : Enemy
 {
+    public float dodgeProbability;
     private float attackTime;
 
     public override void Update()
@@ -11,10 +12,8 @@ public class MeleeEnemy : Enemy
         base.Update();
         if(target != null){
             if(!isInRange(target)){
-                animator.SetBool("isMoving", true);
                 move();
             }else {
-                animator.SetBool("isMoving", false);
                 if(Time.time >= attackTime){
                     animator.SetBool("isAttacking", true);
                     attackTime = Time.time + timeBetweenAttacks;
@@ -27,5 +26,15 @@ public class MeleeEnemy : Enemy
         if(target == null) return;
         target.GetComponent<Defense>().takeDamage(damage);
         animator.SetBool("isAttacking", false);
+    }
+
+    public override void takeDamage(int damage)
+    {
+        float random = Random.Range(0, 100);
+        if(random <= dodgeProbability){
+            Debug.Log("Dodge");
+            return;
+        }
+        base.takeDamage(damage);
     }
 }

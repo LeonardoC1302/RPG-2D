@@ -11,6 +11,7 @@ public class ProyectileScript : MonoBehaviour
     public float range;
     private int bulletType; // 0 = enemy, 1 = defense
     public Transform source;
+    public bool canHitFlying = false;
 
 
     void Start()
@@ -24,6 +25,10 @@ public class ProyectileScript : MonoBehaviour
 
     public void setDamage(int damage){
         this.damage = damage;
+    }
+
+    public void setCanHitFlying(bool canHitFlying){
+        this.canHitFlying = canHitFlying;
     }
 
     public void setRange(float range){
@@ -63,6 +68,7 @@ public class ProyectileScript : MonoBehaviour
         } else if(bulletType == 1){
             Enemy enemy = other.GetComponent<Enemy>();
             if(enemy != null){
+                if(!canHitFlying && enemy.isFlying) return;
                 enemy.takeDamage(damage);
                 Destroy(gameObject);
             }

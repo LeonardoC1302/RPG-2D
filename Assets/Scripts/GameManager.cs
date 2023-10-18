@@ -51,4 +51,8 @@ public class GameManager : MonoBehaviour
             grid.SetActive(true);
         }
     }
+
+    public void addGold(int goldToAdd){
+        gold += goldToAdd;
+    }
 }

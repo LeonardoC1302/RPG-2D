@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0dfab39075011d4abf90ef2bd515836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldToDrop: 50
   range: 3
   health: 200
   damage: 10

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private GameManager gameManager;
+    public int goldToDrop;
     public float range;
     public int health;
     public int damage;
@@ -20,6 +22,7 @@ public class Enemy : MonoBehaviour
     public bool isFlying = false;
 
     public virtual void Start(){
+        gameManager = FindObjectOfType<GameManager>();
         animator = GetComponent<Animator>();
         scale = transform.localScale;
     }
@@ -58,6 +61,7 @@ public class Enemy : MonoBehaviour
     }
 
     public virtual void Die(){
+        gameManager.addGold(goldToDrop);
         Destroy(gameObject);
     }
 

@@ -20,6 +20,19 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         transform.rotation = Quaternion.identity;
-        if(target != null && target.GetComponent<GemScript>() == null) transform.position = target.position + new Vector3(0, 0.2f, 0);
+        if(target != null && target.GetComponent<GemScript>() == null){
+            transform.position = target.position + new Vector3(0, 0.2f, 0);
+
+            if(target.localScale.x < 0){
+                transform.localScale = new Vector3(-1, 1, 1);
+            }else{
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+
+        }
+
+        if(slider.value <= 0){
+            Destroy(gameObject);
+        }
     }
 }

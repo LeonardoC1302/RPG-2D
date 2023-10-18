@@ -15,6 +15,7 @@ public class Defense : MonoBehaviour
     public Transform target;
     private TileScript tile;
     [SerializeField] private HealthBar healthBar;
+    public bool canHitFlying = false;
 
     private void Awake() {
         healthBar = GetComponentInChildren<HealthBar>();
@@ -42,12 +43,13 @@ public class Defense : MonoBehaviour
         if(tile != null) this.tile.isOccupied = false;
     }
 
-    public Transform getCloserTarget(){
+    public virtual Transform getCloserTarget(){
         float minDistance = float.MaxValue;
         Enemy closerEnemy = null;
 
         Enemy[] enemies = FindObjectsOfType<Enemy>();
         foreach(Enemy enemy in enemies){
+            if(enemy.isFlying && !canHitFlying) continue;
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if(distance < minDistance){
                 minDistance = distance;

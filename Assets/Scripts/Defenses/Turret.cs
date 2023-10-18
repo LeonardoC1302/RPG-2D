@@ -29,6 +29,7 @@ public class Turret : Defense
         proyectile.GetComponent<ProyectileScript>().setDamage(damage);
         proyectile.GetComponent<ProyectileScript>().setRange(range);
         proyectile.GetComponent<ProyectileScript>().setSource(transform);
+        proyectile.GetComponent<ProyectileScript>().setCanHitFlying(canHitFlying);
         proyectile.GetComponent<ProyectileScript>().setBulletType(1);
     }
 
