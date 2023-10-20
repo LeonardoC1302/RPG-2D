@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour
 {
@@ -19,9 +21,11 @@ public class WaveManager : MonoBehaviour
     private Wave currentWave;
     private int currentWaveIndex;
     private Transform gem; // Change to defenses
+    public TextMeshProUGUI waveText;
 
     private void Start(){
         gem = GameObject.FindGameObjectWithTag("Gem").transform; // Change to defenses
+        waveText.text = "Wave " + (currentWaveIndex + 1).ToString();
         StartCoroutine(StartNextWave(currentWaveIndex));
     }
 
@@ -52,7 +56,14 @@ public class WaveManager : MonoBehaviour
         if(finishedSpawning == true && GameObject.FindGameObjectsWithTag("Enemy").Length == 0){
             finishedSpawning = false;
             if(currentWaveIndex + 1 < waves.Length){
+                Defense[] defenses = FindObjectsOfType<Defense>();
+                foreach(Defense defense in defenses){
+                    if(defense.GetComponent<GemScript>() != null) continue;
+                    defense.increaseLevel();
+                }
                 currentWaveIndex++;
+                waveText.text = "Wave " + (currentWaveIndex + 1).ToString();
+                Debug.Log("Wave Completed!");
                 StartCoroutine(StartNextWave(currentWaveIndex));
             } else {
                 Debug.Log("You win!");

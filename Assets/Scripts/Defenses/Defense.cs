@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -16,6 +17,7 @@ public class Defense : MonoBehaviour
     private TileScript tile;
     [SerializeField] private HealthBar healthBar;
     public bool canHitFlying = false;
+    public int level = 1;
 
     private void Awake() {
         healthBar = GetComponentInChildren<HealthBar>();
@@ -69,5 +71,13 @@ public class Defense : MonoBehaviour
     public bool isInRange(Transform target){
         if(Vector2.Distance(transform.position, target.position)/0.32 < range) return true;
         return false;
+    }
+
+    public void increaseLevel(){
+        level++;
+        damage += (int)( 0.5 * (float)(level-1) );
+        health += 10;
+        timeBetweenAttacks -= 0.1f;
+        healthBar.SetLevel(level);
     }
 }
