@@ -43,6 +43,7 @@ public class TankEnemy : Enemy
 
     public override void takeDamage(int damage)
     {
+        if(isTarget) damage *= 2;
         if(shield > 0){
             shield -= damage;
             shieldBar.UpdateHealth(shield, maxShield);

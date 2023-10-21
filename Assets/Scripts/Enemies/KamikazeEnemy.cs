@@ -21,6 +21,7 @@ public class KamikazeEnemy : Enemy
     }
 
     public override void takeDamage(int damage) {
+        if(isTarget) damage *= 2;
         health -= damage;
         if (health <= 0) {
             Explode();

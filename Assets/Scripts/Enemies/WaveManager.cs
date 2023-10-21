@@ -59,7 +59,7 @@ public class WaveManager : MonoBehaviour
                 Defense[] defenses = FindObjectsOfType<Defense>();
                 foreach(Defense defense in defenses){
                     if(defense.GetComponent<GemScript>() != null) continue;
-                    defense.increaseLevel();
+                    defense.increaseLevel(1);
                 }
                 currentWaveIndex++;
                 waveText.text = "Wave " + (currentWaveIndex + 1).ToString();

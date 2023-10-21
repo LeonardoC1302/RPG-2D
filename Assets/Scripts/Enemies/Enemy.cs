@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     public Animator animator;
     private Vector3 scale;
     public bool isFlying = false;
+    public bool isTarget = false;
 
     public virtual void Start(){
         gameManager = FindObjectOfType<GameManager>();
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
         }
     }
     public virtual void takeDamage(int damage) {
+        if(isTarget) damage *= 2;
         health -= damage;
         if (health <= 0) {
             animator.SetTrigger("Die");

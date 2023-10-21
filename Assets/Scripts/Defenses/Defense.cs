@@ -73,11 +73,31 @@ public class Defense : MonoBehaviour
         return false;
     }
 
-    public void increaseLevel(){
-        level++;
+    public void increaseLevel(int levels){
+        level += levels;
+        for(int i = 0; i < levels; i++){
+            increaseStats();
+        }
+        healthBar.SetLevel(level);
+    }
+
+    private void increaseStats(){
         damage += (int)( 0.5 * (float)(level-1) );
         health += 10;
         timeBetweenAttacks -= 0.1f;
-        healthBar.SetLevel(level);
+    }
+
+    public void Heal(int amount){
+        health += amount;
+        if(health > maxHealth) health = maxHealth;
+        healthBar.UpdateHealth(health, maxHealth);
+    }
+
+    public void IncreaseDamage(int amount){
+        damage += amount;
+    }
+
+    public void IncreaseSpeed(float amount){
+        timeBetweenAttacks -= amount;
     }
 }
