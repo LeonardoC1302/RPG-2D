@@ -18,6 +18,10 @@ public class PlayerScript : MonoBehaviour
     private int itemThrowIndex;
     private Inventory playerInv;
 
+    //UI Elements
+    private bool isNearbyT = false;
+    public GameObject interactPrompt;
+
 
     void Start()
     {
@@ -25,6 +29,22 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();  
         inventory = rb.GetComponent<Inventory>();
         playerInv = gameObject.GetComponent<Inventory>();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Teleport"))
+        {
+            isNearbyT = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Teleport"))
+        {
+            isNearbyT = false;
+        }
     }
 
     public void setItemThrow(GameObject item){
@@ -45,13 +65,23 @@ public class PlayerScript : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.normalized.sqrMagnitude); // Speed is the magnitude of the vector
 
-        if (Input.GetKey(KeyCode.Space) && Time.time > lastThrow + 0.25f && itemThrow != null){
+        /*if (Input.GetKey(KeyCode.Space) && Time.time > lastThrow + 0.25f && itemThrow != null){
             throwItem(itemThrow);
             lastThrow = Time.time;
+        }*/
+        if (isNearbyT && interactPrompt.activeSelf)
+        {
+            Vector3 playerPosition = gameObject.transform.position;
+            interactPrompt.transform.position = new Vector3(playerPosition.x + 0.2f, playerPosition.y + 0.1f, playerPosition.z);
         }
-    
+        
+        if(isNearbyT){
+            appearPrompt();
+        }else{
+            removePrompt();
+        }
     }
-
+    /*
     private void throwItem(GameObject item){
         Vector3 direction;
         direction = movement;
@@ -67,7 +97,7 @@ public class PlayerScript : MonoBehaviour
             playerInv.ReduceItems(itemThrowIndex);
         }
     }
-
+    */
     private void FixedUpdate(){
         rb.MovePosition(rb.position + movement * speed * speedMultiplier * Time.fixedDeltaTime);
     }
@@ -77,6 +107,14 @@ public class PlayerScript : MonoBehaviour
         if (health <= 0) {
             Destroy(gameObject);
         }
+    }
+
+    private void appearPrompt(){
+        interactPrompt.SetActive(true);
+    }
+
+    private void removePrompt(){
+        interactPrompt.SetActive(false);
     }
 }
 

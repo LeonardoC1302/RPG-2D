@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Teleporter : MonoBehaviour
+public class Guide : MonoBehaviour
 {
-    public Transform destination;
+    private Animator animator;
     private bool isNearby;
-    private Collider2D player;
- 
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isNearby = true;
-            player = other;
+            //Debug.Log("true");
         }
     }
 
@@ -23,13 +26,16 @@ public class Teleporter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isNearby = false;
+            //Debug.Log("false");
         }
     }
 
     void Update()
     {
-        if(isNearby && Input.GetKeyDown(KeyCode.E)){
-            player.transform.position = destination.position;
+        if(isNearby){
+            animator.SetBool("Appear", true);
+        }else{
+            animator.SetBool("Appear", false);
         }
     }
 }
