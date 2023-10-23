@@ -14,6 +14,7 @@ TagManager:
   - Iron
   - Gold
   - Teleport
+  - NPC
   layers:
   - Default
   - TransparentFX
