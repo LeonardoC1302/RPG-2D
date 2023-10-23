@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] slots;
     public string[] objects;
     public int[] quantityPerSlot;
+    private CanvasGroup canvasGroup;
 
     public int maxCapacity;
     private TextMeshProUGUI num;
@@ -48,5 +49,4 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-    
 }

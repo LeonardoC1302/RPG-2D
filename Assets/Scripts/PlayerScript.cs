@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Teleport") || other.CompareTag("NPC"))
+        if (other.CompareTag("Teleport") || other.CompareTag("NPC") || other.CompareTag("Interact"))
         {
             isNearbyT = true;
         }
@@ -41,7 +41,7 @@ public class PlayerScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Teleport")|| other.CompareTag("NPC"))
+        if (other.CompareTag("Teleport")|| other.CompareTag("NPC")|| other.CompareTag("Interact"))
         {
             isNearbyT = false;
         }

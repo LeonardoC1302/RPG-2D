@@ -15,6 +15,7 @@ TagManager:
   - Gold
   - Teleport
   - NPC
+  - Interact
   layers:
   - Default
   - TransparentFX
