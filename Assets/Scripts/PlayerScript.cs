@@ -22,7 +22,7 @@ public class PlayerScript : MonoBehaviour
     //UI Elements
     private bool isNearbyT = false;
     public GameObject interactPrompt;
-    public Light2D playerLight;
+    public GameObject flashLight;
 
 
     void Start()
@@ -31,7 +31,7 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();  
         inventory = rb.GetComponent<Inventory>();
         playerInv = gameObject.GetComponent<Inventory>();
-        playerLight.enabled = false;
+        flashLight.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -74,10 +74,10 @@ public class PlayerScript : MonoBehaviour
         }*/
 
         if(Input.GetKeyDown(KeyCode.Space)){
-            playerLight.enabled = !playerLight.enabled;
+            flashLight.SetActive(!flashLight.activeSelf);
         }
 
-        if(playerLight.enabled){
+        if(flashLight.activeSelf){
             RotateLight();
         }
 
@@ -132,7 +132,7 @@ public class PlayerScript : MonoBehaviour
     private void RotateLight(){
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        playerLight.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        flashLight.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // Rotate to the movement direction
         // if (movement.x != 0 || movement.y != 0) {
