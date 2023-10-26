@@ -16,6 +16,7 @@ TagManager:
   - Teleport
   - NPC
   - Interact
+  - GlobalLight
   layers:
   - Default
   - TransparentFX
