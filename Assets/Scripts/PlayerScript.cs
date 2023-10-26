@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class PlayerScript : MonoBehaviour
     //UI Elements
     private bool isNearbyT = false;
     public GameObject interactPrompt;
+    public Light2D playerLight;
 
 
     void Start()
@@ -29,6 +31,7 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();  
         inventory = rb.GetComponent<Inventory>();
         playerInv = gameObject.GetComponent<Inventory>();
+        playerLight.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -69,6 +72,15 @@ public class PlayerScript : MonoBehaviour
             throwItem(itemThrow);
             lastThrow = Time.time;
         }*/
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            playerLight.enabled = !playerLight.enabled;
+        }
+
+        if(playerLight.enabled){
+            RotateLight();
+        }
+
         if (isNearbyT && interactPrompt.activeSelf)
         {
             Vector3 playerPosition = gameObject.transform.position;
@@ -115,6 +127,17 @@ public class PlayerScript : MonoBehaviour
 
     private void removePrompt(){
         interactPrompt.SetActive(false);
+    }
+
+    private void RotateLight(){
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        playerLight.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+
+        // Rotate to the movement direction
+        // if (movement.x != 0 || movement.y != 0) {
+        //     playerLight.transform.rotation = Quaternion.LookRotation(Vector3.forward, movement);
+        // }
     }
 }
 
